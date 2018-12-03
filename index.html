@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Card</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+
+<!-- link for stylesheet -->
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+<!-- CDN for font icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- font for logo -->
+<link href="https://fonts.googleapis.com/css?family=Cormorant+Upright" rel="stylesheet">
+
+</head>
+
+<body>
+	<section class="card">
+	<div class="bg">
+	R
+	</div>
+		<div class="logo">
+			R
+		</div>
+		<div class="mlogo">
+			<div class="circle1">
+			</div>
+			<div class="circle2">
+			</div>
+		</div>
+		<form method="post" action="/action_page.php">
+			<label>CREDIT CARD NUMBER
+				<input type="number" id="cardnumber">
+				<p class="msg"></p>
+			</label>
+			
+			<label>EXPIRY MONTH & YEAR
+				<input type="text" id="expiry" placeholder="mm/yy">
+				<p class="msg"></p>
+			</label>
+			
+			<label>CVV
+				</br><input type="number" id="cvv">
+				<p class="msg"></p>
+			</label>
+			
+			<input type="button" onclick="submitform()" value="Submit">
+		</form>
+	</section>
+<script src="assets/js/script.js"></script>
+</body>
+</html>
