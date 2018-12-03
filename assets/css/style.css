@@ -1,0 +1,103 @@
+body{
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	color: #333;
+	margin: 0;
+	background: #ffd400;
+}
+
+p, h1, h2, h3, h4, h5, h6{
+	margin:0;
+}
+
+.card{
+	background: #000;
+    width: 30em;
+    height: 18em;
+    border-radius: 10px;
+    box-shadow: -1px 13px 20px 2px #42414161;
+	transform: translate(0, 50%);
+    margin:auto;
+	display:grid;
+	grid-template-areas:"logo mlogo"
+						"form form";
+	grid-template-columns: 65% 35%;
+    grid-template-rows: 8em auto;
+}
+
+.logo{
+	font-family: 'Cormorant Upright', serif;
+	font-size: 6em;
+    padding-left: 15px;
+	grid-area:logo;
+}
+
+.mlogo{
+	padding:15px 15px 0 0;
+	grid-area:mlogo;
+}
+
+.circle1{
+	background: #ff3b00;
+    width: 6em;
+    height: 6em;
+    border-radius: 100%;
+}
+
+.circle2{
+	background: #ffb100d6;
+    width: 6em;
+    height: 6em;
+    border-radius: 100%;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+form{
+	grid-area:form;
+	display: grid;
+    grid-template-columns: 65% 35%;
+	padding: 15px;
+	z-index: 2;
+}
+
+form label{
+	color: #fff;
+    font-size: 11px;
+}
+
+form input[type="number"], input[type="text"]{
+	height: 28px;
+    border-radius: 3px;
+    border: none;
+    box-shadow: inset 0px -1px 8px 1px #8e8b8bb5;
+	margin-top: 5px;
+	width: 96%;
+}
+
+form input#cvv{
+	width:24%;
+}
+
+form input[type="button"]{
+	background: #cc2f00;
+    border: none;
+    border-radius: 5px;
+    height: 50%;
+    width: 95%;
+    color: #fff;
+    align-self: center;
+}
+
+.msg{
+	color:red;
+}
+
+.bg{
+	font-family: 'Cormorant Upright', serif;
+    font-size: 19em;
+    position: absolute;
+    left: 30%;
+    top: -28%;
+	opacity: .6;
+}
