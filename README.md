@@ -1,6 +1,9 @@
 # Card-Validation
 Card Validation using Javascript
 
+Below is the link of the working code:-
+https://ritikaagarwal1.github.io/Card-Validation/
+
 This is a simple card input form.
 It contains feilds like card number, expriy month, year and 
 CVV.
